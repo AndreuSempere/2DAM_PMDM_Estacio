@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MensajeDialog {
-  static Future<void> showValidationDialog(BuildContext context, bool opcionElegida) {
+  static Future<void> validarDialog(BuildContext context, bool opcionElegida) {
     return showDialog(
       context: context,
       builder: (BuildContext context) {

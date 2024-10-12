@@ -44,9 +44,9 @@ class _FormExampleState extends State<FormExample> {
                 setState(() {
                   nombreIntroducido = _nameController.text.isNotEmpty ? _nameController.text : "NOMBRE_INTRODUCIDO";
                 });
-                MensajeDialog.showValidationDialog(context, true);
+                MensajeDialog.validarDialog(context, true);
               } else {
-                MensajeDialog.showValidationDialog(context, false);
+                MensajeDialog.validarDialog(context, false);
               }
             },
             child: const Text('Generar Robot'),
