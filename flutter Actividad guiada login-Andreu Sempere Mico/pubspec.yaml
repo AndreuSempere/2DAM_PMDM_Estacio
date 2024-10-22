@@ -1,0 +1,45 @@
+name: flutter_harry_potter
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  get_it: ^8.0.0
+  go_router: ^14.3.0
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/icon/icono.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icono.png"
+  adaptive_icon_foreground: "assets/icon/icono.png"
+  adaptive_icon_background: "#5F8F3C"
+  remove_sdk_android: 21
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon/icono.png"
