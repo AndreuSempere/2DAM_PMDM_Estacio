@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "808680881975",
+    "firebase_url": "https://diario-visitas-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "diario-visitas",
+    "storage_bucket": "diario-visitas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808680881975:android:0c33d5d6e6b7e6aa9524b2",
+        "android_client_info": {
+          "package_name": "com.visitas.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiV9Fwq-tDsevRSDbQEVJ--l1L2cuimVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
