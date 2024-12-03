@@ -59,7 +59,17 @@ class VisitsBloc extends Bloc<VisitsEvent, VisitsState> {
   Future<void> _onDeleteVisits(
       DeleteVisitEvent event, Emitter<VisitsState> emit) async {
     emit(state.copyWith(isLoading: true, errorMessage: null));
-    await deleteVisits(event.visitId);
-    add(LoadVisitsEvent(filter: state.filter));
+    final result = await deleteVisits(event.visitId);
+    result.fold(
+      (failure) {
+        emit(state.copyWith(
+          isLoading: false,
+          errorMessage: "Error creando la visita",
+        ));
+      },
+      (_) {
+        add(LoadVisitsEvent(filter: state.filter));
+      },
+    );
   }
 }
